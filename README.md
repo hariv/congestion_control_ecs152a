@@ -15,4 +15,4 @@ Derived from https://github.com/Haroon96/ecs152a-fall-2023/tree/main/week7
 5. Invoke your sender.
 6. Once the receiver has received the `-1` after receiving all the data, it will terminate.
 
-#### You are *not* supposed to make any changes to any of the files in this repository.
+#### You are *not* supposed to make changes to any file in this repository.
