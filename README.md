@@ -14,3 +14,5 @@ Derived from https://github.com/Haroon96/ecs152a-fall-2023/tree/main/week7
 4. Your sender has to send `-1` as the sequence number  to indicate that it has finished sending data.
 5. Invoke your sender.
 6. Once the receiver has received the `-1` after receiving all the data, it will terminate.
+
+#### You are *not* make any changes to any of the files in this repository.
