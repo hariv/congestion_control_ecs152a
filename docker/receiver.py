@@ -16,7 +16,8 @@ with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as udp_socket:
     # file to write to
     # write to some file on the hard disk
     recv = open('/hdd/recv.txt', 'wb')
-    
+
+    print("Receiver running")
     # start receiving packets
     while True:
         timeouts = 0
