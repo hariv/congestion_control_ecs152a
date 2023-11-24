@@ -11,6 +11,6 @@ Derived from https://github.com/Haroon96/ecs152a-fall-2023/tree/main/week7
 1. Run `./start-simulator.sh` to start running our receiver with the emulated network profile. Once it's running successfully, you will see a message saying `Receiver running`. 
 2. The receiver has already been programmed to send acknowledgements to the sender similar to the receiver in the [discussion](https://github.com/Haroon96/ecs152a-fall-2023/blob/main/week7/docker/receiver.py).
 3. Implement your own sender code and bind it to any port other than `5001`. Send packets to `localhost`, port `5001` to communicate with the receiver.
-4. Your sender has to send `-1` as the `sequence number`  to indicate that it has finished sending data.
+4. Your sender has to send `-1` as the sequence number  to indicate that it has finished sending data.
 5. Invoke your sender.
 6. Once the receiver has received the `-1` after receiving all the data, it will terminate.
