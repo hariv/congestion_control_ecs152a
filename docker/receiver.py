@@ -47,7 +47,5 @@ with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as udp_socket:
             udp_socket.sendto(acknowledgement, client)
         except socket.timeout:
             timeouts += 1
-            if timeouts > 3:
-                break
 
     recv.close()
