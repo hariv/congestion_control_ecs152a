@@ -53,9 +53,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as udp_socket:
             
             # check if all data received (empty message)
             if len(message) == 0 and ack_id == seq_id:
-                ack = create_acknowledgement(ack_id, 'ack')
                 fin = create_acknowledgement(ack_id + 3, 'fin')
-                udp_socket.sendto(ack, client)
                 udp_socket.sendto(fin, client)
         except socket.timeout:
             timeouts += 1
